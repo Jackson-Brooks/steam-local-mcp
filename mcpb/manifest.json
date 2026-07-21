@@ -1,0 +1,21 @@
+{
+  "manifest_version": "0.2",
+  "name": "steam-local-mcp",
+  "version": "0.2.2",
+  "description": "A Windows Steam MCP server with local client controls and optional Steam Web API insights.",
+  "author": {
+    "name": "Jackson-Brooks"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
+      "env": {}
+    }
+  },
+  "license": "MIT"
+}
