@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.jackson-brooks/steam-local-mcp",
+  "name": "io.github.Jackson-Brooks/steam-local-mcp",
   "description": "A Windows Steam MCP server with local client controls and optional Steam Web API insights.",
   "repository": {
     "url": "https://github.com/Jackson-Brooks/steam-local-mcp",
     "source": "github"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "steam-local-mcp",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "transport": {
         "type": "stdio"
       },

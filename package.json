@@ -1,7 +1,7 @@
 {
   "name": "steam-local-mcp",
-  "version": "0.2.1",
-  "mcpName": "io.github.jackson-brooks/steam-local-mcp",
+  "version": "0.2.2",
+  "mcpName": "io.github.Jackson-Brooks/steam-local-mcp",
   "description": "A Windows Steam MCP server with local client controls and optional Steam Web API insights.",
   "keywords": [
     "mcp",
