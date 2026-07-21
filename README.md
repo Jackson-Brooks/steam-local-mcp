@@ -6,6 +6,25 @@ Ask an agent to find an installed game, launch it, open its Steam page, check lo
 
 This is a standard **stdio MCP server**. It is agent-neutral: use it with Codex, Claude, or any other MCP client that can run a local command.
 
+## Example Usage
+
+```text
+User: "Pick a strategy game for me to play."
+
+Agent: 🛠️ Calling steam_list_games()
+       🛠️ Calling steam_get_download_status(app_id: 2861700)
+       └─ name: "Balatro", needs_update: true
+
+Agent: "How about Balatro? It's installed, but has an update pending. Want me to start updating and then launch it?"
+
+User: "Yes."
+
+Agent: 🛠️ Calling steam_install_game(app_id: 2861700)
+       🛠️ Calling steam_launch_game(app_id: 2861700)
+
+Agent: "Triggered the update and launched Balatro."
+```
+
 ## What it can do
 
 ### Local Steam tools — no API key
