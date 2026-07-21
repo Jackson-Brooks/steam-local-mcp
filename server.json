@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jackson-brooks/steam-local-mcp",
+  "description": "A Windows Steam MCP server with local client controls and optional Steam Web API insights.",
+  "repository": {
+    "url": "https://github.com/Jackson-Brooks/steam-local-mcp",
+    "source": "github"
+  },
+  "version": "0.2.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "steam-local-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STEAM_API_KEY",
+          "description": "Optional Steam Web API key for account-library and recently-played tools.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true
+        },
+        {
+          "name": "STEAM_ID",
+          "description": "Optional 64-bit Steam ID used with STEAM_API_KEY for account-library tools.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
