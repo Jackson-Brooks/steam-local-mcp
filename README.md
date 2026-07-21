@@ -4,7 +4,7 @@ A free, open-source Windows [Model Context Protocol](https://modelcontextprotoco
 
 Ask an agent to find an installed game, launch it, open its Steam page, check local download/update status, search the Store, or summarize Steam-library storage. Steam starts quietly in the background when a requested client action needs it.
 
-This is a standard **stdio MCP server**. It is agent-neutral: use it with Codex, Claude Desktop, ChatGPT, or any other MCP client that can run a local command.
+This is a standard **stdio MCP server**. It is agent-neutral: use it with Codex, Claude, or any other MCP client that can run a local command.
 
 ## What it can do
 
@@ -27,6 +27,7 @@ This is a standard **stdio MCP server**. It is agent-neutral: use it with Codex,
 
 Set `STEAM_API_KEY` and `STEAM_ID` to enable:
 
+- `steam_api_status` — verify if API credentials are configured, valid, and connected to Steam's Web API.
 - `steam_get_library` — owned games, playtime, last played, filtering, and pagination.
 - `steam_get_recently_played` — recently played games, ordered by two-week playtime.
 
@@ -38,7 +39,7 @@ Set `STEAM_API_KEY` and `STEAM_ID` to enable:
 
 ## Install from npm
 
-After this package is published to npm, add this equivalent configuration to your MCP client:
+To install the published package via npm, add this equivalent configuration to your MCP client:
 
 ```json
 {
