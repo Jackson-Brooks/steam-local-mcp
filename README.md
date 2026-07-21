@@ -12,17 +12,14 @@ This is a standard **stdio MCP server**. It is agent-neutral: use it with Codex,
 User: "Pick a strategy game for me to play."
 
 Agent: 🛠️ Calling steam_list_games()
-       🛠️ Calling steam_get_download_status(app_id: 2861700)
-       └─ name: "Balatro", needs_update: true
 
-Agent: "How about Balatro? It's installed, but has an update pending. Want me to start updating and then launch it?"
+Agent: "How about Balatro? Should I launch it?"
 
 User: "Yes."
 
-Agent: 🛠️ Calling steam_install_game(app_id: 2861700)
-       🛠️ Calling steam_launch_game(app_id: 2861700)
+Agent: 🛠️ Calling steam_launch_game(app_id: 2861700)
 
-Agent: "Triggered the update and launched Balatro."
+Agent: "Launched Balatro."
 ```
 
 ## What it can do
